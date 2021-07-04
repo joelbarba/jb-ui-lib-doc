@@ -50,7 +50,7 @@ module.exports = _unsupportedIterableToArray;
 /*! exports provided: name, version, author, license, homepage, peerDependencies, repository, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"name\":\"jb-ui-lib\",\"version\":\"1.1.1\",\"author\":\"Joel Barba\",\"license\":\"ISC\",\"homepage\":\"https://github.com/joelbarba/jb-ui-lib\",\"peerDependencies\":{\"@angular/common\":\"^10.0.11\",\"@angular/core\":\"^10.0.11\",\"@ng-bootstrap/ng-bootstrap\":\"^7.0.0\",\"debug\":\"^4.1.1\",\"jquery\":\"^3.5.1\",\"spectrum-colorpicker\":\"^1.8.1\"},\"repository\":{\"type\":\"git\",\"url\":\"git+https://github.com/joelbarba/jb-ui-lib.git\"}}");
+module.exports = JSON.parse("{\"name\":\"jb-ui-lib\",\"version\":\"1.1.2\",\"author\":\"Joel Barba\",\"license\":\"ISC\",\"homepage\":\"https://github.com/joelbarba/jb-ui-lib\",\"peerDependencies\":{\"@angular/common\":\"^10.0.11\",\"@angular/core\":\"^10.0.11\",\"@ng-bootstrap/ng-bootstrap\":\"^7.0.0\",\"debug\":\"^4.1.1\",\"jquery\":\"^3.5.1\",\"spectrum-colorpicker\":\"^1.8.1\"},\"repository\":{\"type\":\"git\",\"url\":\"git+https://github.com/joelbarba/jb-ui-lib.git\"}}");
 
 /***/ }),
 
@@ -10295,6 +10295,24 @@ var JbNumber = {}; // Wrap all functions here
  */
 JbNumber.isIn = function (list) {
     return (list.indexOf(this.valueOf()) >= 0);
+};
+/**
+ * @memberOf Number
+ * @param leftPad - Size of the output string counting the length of the original string + padding left
+ * @param placeholder - Value to fulfill the padding (0 by default)
+ * @param rightPad - Size of the output string counting the length of the original string + padding right
+ * @description It converts the number into a string and applies the pad
+ *              Ex: myValue.pad(4) -> 0003
+ */
+JbNumber.pad = function (leftPad, placeholder, rightPad) {
+    if (placeholder === void 0) { placeholder = '0'; }
+    var value = this + '';
+    var originalLength = value.length;
+    var strValue = value.padStart(leftPad, placeholder);
+    if (!!rightPad) {
+        strValue = strValue.padEnd(leftPad + rightPad - originalLength, placeholder);
+    }
+    return strValue;
 };
 /* harmony default export */ __webpack_exports__["default"] = (JbNumber);
 
