@@ -50,7 +50,7 @@ module.exports = _unsupportedIterableToArray;
 /*! exports provided: name, version, author, license, homepage, peerDependencies, repository, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"name\":\"jb-ui-lib\",\"version\":\"1.1.2\",\"author\":\"Joel Barba\",\"license\":\"ISC\",\"homepage\":\"https://github.com/joelbarba/jb-ui-lib\",\"peerDependencies\":{\"@angular/common\":\"^10.0.11\",\"@angular/core\":\"^10.0.11\",\"@ng-bootstrap/ng-bootstrap\":\"^7.0.0\",\"debug\":\"^4.1.1\",\"jquery\":\"^3.5.1\",\"spectrum-colorpicker\":\"^1.8.1\"},\"repository\":{\"type\":\"git\",\"url\":\"git+https://github.com/joelbarba/jb-ui-lib.git\"}}");
+module.exports = JSON.parse("{\"name\":\"jb-ui-lib\",\"version\":\"1.1.3\",\"author\":\"Joel Barba\",\"license\":\"ISC\",\"homepage\":\"https://github.com/joelbarba/jb-ui-lib\",\"peerDependencies\":{\"@angular/common\":\"^10.0.11\",\"@angular/core\":\"^10.0.11\",\"@ng-bootstrap/ng-bootstrap\":\"^7.0.0\",\"debug\":\"^4.1.1\",\"jquery\":\"^3.5.1\",\"spectrum-colorpicker\":\"^1.8.1\"},\"repository\":{\"type\":\"git\",\"url\":\"git+https://github.com/joelbarba/jb-ui-lib.git\"}}");
 
 /***/ }),
 
